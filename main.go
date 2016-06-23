@@ -19,8 +19,6 @@ var (
 	config     *Config
 	kapi       client.KeysAPI
 	controller *Client
-
-	exitAll = make(chan int)
 )
 
 func init() {

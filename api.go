@@ -39,7 +39,7 @@ type Client struct {
 }
 
 func NewClient(controllerUrl, apikey string) *Client {
-	socket := "/var/run/csphere-failover.sock"
+	socket := "/var/run/csphere/failover.sock"
 	// socket := "/Users/ckeyer/tmp/csphere-failover.sock"
 	unixDial := func(proto, addr string) (net.Conn, error) {
 		return net.DialTimeout("unix", socket, time.Second*3)

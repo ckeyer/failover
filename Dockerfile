@@ -1,4 +1,4 @@
-FROM alpine:edge
+FROM  scratch 
 
 ADD ./bin /go
 
